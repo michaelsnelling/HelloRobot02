@@ -4,7 +4,7 @@ import time
 
 class Piggy(object):
 
-     def __init(selfself):
+    def __init(selfself):
         print("I AM ALIVE")
 
     def pulse(self):

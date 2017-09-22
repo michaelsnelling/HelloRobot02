@@ -58,4 +58,9 @@ except Exception as ee:
     print(ee)
     from gopigo import *
     stop()
-    
+
+try:
+    menu()
+except(KeyboardInterrupt, SystemExit):
+    from gopigo import *
+    stop()

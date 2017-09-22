@@ -38,7 +38,24 @@ class Piggy(object):
             time.sleep(.5)
             stop()
 
-
 p = Piggy()
 
+def menu():
+    while True:
+        input = raw_input("Pres 1 fopr cruise\n Press 2 for pulse \n Press 3 for sweep")
+        if "1" in input:
+            p.cruise()
+        elif "2" in input:
+            p.pulse()
+        elif "3" in input:
+            p.servo_sweep()
 
+
+
+try:
+    menu()
+except Exception as ee:
+    print(ee)
+    from gopigo import *
+    stop()
+    
